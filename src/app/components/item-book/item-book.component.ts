@@ -73,7 +73,7 @@ export class ItemBookComponent {
         Swal.fire({
           position: 'center',
           icon: 'success',
-          title: `Total: ${this.qty?.addEventListener('change', (e:any) =>console.log(e.target.value))}`,
+          title: `Loan Confirmed`,
           showConfirmButton: false,
           timer: 2000,
         });
