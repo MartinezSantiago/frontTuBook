@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar{
+    height: 100%;
+    background: #8786B2;
+}
+
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #8786B2;
+    user-select: none;
+}
+
+.sidebar ul a 
+{
+    display: block ;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+.sidebar ul button 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    transition: .4s;
+    border: none;
+    background-color: transparent;
+}
+
+.sidebar ul button:hover {
+    transform: translateX(10px);
+}
+
+
+.sidebar header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+img {
+    height: auto;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+  }
+
+ul button
+{       
+ 
+    width: fit-content;
+        line-height: 65px;
+        font-size: 20px;
+        color: white;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        transition: .4s;
+}
+  
+ul li 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mobile li a {
+    color: inherit;
+
+}
+.mobile li {
+    margin-top: 15px;
+}
+  

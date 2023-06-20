@@ -1,0 +1,10 @@
+.navBar {
+    background-color: #8786B2;
+    color: #fff;
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    overflow: auto;
+}

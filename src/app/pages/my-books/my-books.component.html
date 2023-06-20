@@ -1,0 +1,41 @@
+<header class="header-page d-flex flex-column flex-lg-row gap-2 justify-content-between">
+    <label class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+      <input
+        class="col-12"
+        type="text"
+        placeholder="Search for book title, author, keyword"
+        [(ngModel)]="searchValue"
+        (ngModelChange)="onSearchChange()"
+      />
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </label>
+    <div class="notification-user d-flex">
+      <app-notification class="pt-2"></app-notification>
+      <div class="user my-auto">
+        <span>{{ user?.attributes?.email }}</span>
+      </div>
+    </div>
+  </header>
+  <div *ngIf="searchValue.length > 0; else templateSearch">
+    <main class="mt-3">
+      <h2 class="fw-bold">Search: {{ searchValue }}</h2>
+      <app-list-loans
+        [loans]="loansSearch"
+        class="d-flex flex-wrap gap-5 mx-auto"
+      ></app-list-loans>
+      <div *ngIf="loansSearch.length == 0">
+        <h3>No loan found for the given search criteria</h3>
+      </div>
+    </main>
+  </div>
+  
+  <ng-template #templateSearch>
+    <main class="mt-3">
+      <h2 class="fw-bold">All Loans</h2>
+      <app-list-loans
+        [loans]="loans"
+        class="d-flex flex-wrap gap-5 mx-auto"
+      ></app-list-loans>
+    </main>
+  </ng-template>
+  

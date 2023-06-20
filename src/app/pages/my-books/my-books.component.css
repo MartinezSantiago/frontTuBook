@@ -1,0 +1,26 @@
+.header-page input{
+    height: 27px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 25px;
+}
+
+.header-page input:focus {
+outline: none;
+}
+.header-page label {
+    position: relative;
+}
+
+.header-page label i {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+.notification-user .user {
+    cursor: pointer;
+}
