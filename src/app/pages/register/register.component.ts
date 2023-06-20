@@ -52,7 +52,11 @@ export class RegisterComponent {
       await Auth.confirmSignUp(this.email, confirmationCode);
       console.log('Sign up confirmed successfully.');
       await this.authService.register(userCapture.userSub,this.email);
-
+  Swal.fire({
+        icon: 'success',
+        title: 'Registration Successful',
+        text: 'Your registration has been completed successfully.'
+      });
       console.log('Registration successful.');
       console.log('Username:',  this.email);
     } catch (error) {
